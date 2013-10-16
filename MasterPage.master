@@ -1,0 +1,49 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+
+        <br />
+        <br />
+        <table class="auto-style1">
+            <tr>
+                <td>Wicked Easy Recipes</td>
+            </tr>
+            <tr>
+                <td>Using 5 Ingredients or Less!</td>
+            </tr>
+            <tr>
+                <td>LIST</td>
+            </tr>
+            <tr>
+                <td>
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+
+                </td>
+            </tr>
+            <tr>
+                <td>footer</td>
+            </tr>
+        </table>
+&nbsp;</div>
+    </form>
+</body>
+</html>
