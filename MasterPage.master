@@ -21,13 +21,20 @@
         <br />
         <table class="auto-style1">
             <tr>
-                <td>Wicked Easy Recipes</td>
+                <td><h3>Wicked Easy Recipes</h3></td>
             </tr>
             <tr>
-                <td>Using 5 Ingredients or Less!</td>
+                <td><p id="2ndHeader">Using 5 Ingredients or Less!</p></td>
             </tr>
             <tr>
-                <td>LIST</td>
+                <td id="nav_cell" >
+                    <ul class="nav">
+                      <li><a href="Default.aspx">Home</a></li>
+                      <li><a href="New_Recipe.aspx">New Recipe</a></li>
+                      <li><a href="About_Us.aspx">About Us</a></li>
+                      <li><a href="Contact.aspx">Contact</a></li>
+                    </ul>
+                </td>
             </tr>
             <tr>
                 <td>
@@ -40,7 +47,7 @@
                 </td>
             </tr>
             <tr>
-                <td>footer</td>
+                <td>© 2013. 6K:183 Software Design &amp; Development</td>
             </tr>
         </table>
 &nbsp;</div>
