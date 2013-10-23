@@ -61,14 +61,11 @@
             <asp:BoundField DataField="Ingredient_5" HeaderText="Ingredient #5" SortExpression="Ingredient_5" />
             <asp:BoundField DataField="Preparation" HeaderText="Preparation" SortExpression="Preparation" />
             <asp:BoundField DataField="Notes" HeaderText="Notes" SortExpression="Notes" />
-            <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
+            <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ButtonType="Button" UpdateText="Save" />
         </Fields>
     </asp:DetailsView>
     <br />
-&nbsp;&nbsp;
-    <asp:Button ID="btn_Edit" runat="server" Text="Edit" />
 &nbsp;&nbsp;&nbsp;&nbsp;
-    <asp:Button ID="btn_Delete" runat="server" Text="Delete" />
     <br />
     <br />
 
