@@ -7,11 +7,8 @@
     <title></title>
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
-    <style type="text/css">
-        .auto-style1 {
-            width: 100%;
-        }
-    </style>
+    <link href="StyleSheet.css" type="text/css" rel="stylesheet" />
+    
 </head>
 <body>
     <form id="form1" runat="server">
@@ -21,10 +18,10 @@
         <br />
         <table class="auto-style1">
             <tr>
-                <td><h3>Wicked Easy Recipes</h3></td>
+                <td id="header"><h3>Wicked Easy Recipes</h3></td>
             </tr>
-            <tr>
-                <td><p id="2ndHeader">Using 5 Ingredients or Less!</p></td>
+            <tr >
+                <td id="head2">Using 5 Ingredients or Less!</td>
             </tr>
             <tr>
                 <td id="nav_cell" >
@@ -32,7 +29,7 @@
                       <li><a href="Default.aspx">Home</a></li>
                       <li><a href="New_Recipe.aspx">New Recipe</a></li>
                       <li><a href="About_Us.aspx">About Us</a></li>
-                      <li><a href="Contact.aspx">Contact</a></li>
+                      <li class="last_li"><a href="Contact.aspx">Contact</a></li>
                     </ul>
                 </td>
             </tr>
@@ -47,7 +44,7 @@
                 </td>
             </tr>
             <tr>
-                <td>© 2013. 6K:183 Software Design &amp; Development</td>
+                <td id="footer">© 2013. 6K:183 Software Design &amp; Development</td>
             </tr>
         </table>
 &nbsp;</div>

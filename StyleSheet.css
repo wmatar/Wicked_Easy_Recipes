@@ -1,0 +1,86 @@
+﻿body {
+    background-color:white;
+}
+
+
+/* <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+
+
+    id="header"><h3>Wicked Easy Recipes</h3></td>
+            </tr>
+            <tr>
+                <td><p id="2ndHeader">Using 5 Ingredients or Less!</p></td>
+
+
+    </style> */
+
+#header {
+    text-align:center;
+    background-color:#288F75;
+}
+
+
+#head2 {
+    height:50px;
+    text-align:center;
+    background-color:#B48B6A;
+    font-size: 23px;
+}
+
+
+.auto-style1 {
+    width: 75%;
+    border:solid 1px;
+    margin-left:auto;
+    margin-right:auto;
+        }   
+
+.nav{
+    border:solid 1px;
+    border-color: #ffcc00;
+    border-width:1px 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align:center;
+    font-size: 22px;  
+    font-family:Arial,Tahoma;
+}
+.nav li{
+    display:inline;
+    border-right: solid 2px #555; 
+
+}
+
+.last_li {
+    border-right: none !important;
+}
+
+.nav a{
+    display:inline-block;
+    padding:10px;
+    text-decoration: none; 
+    color: black;    
+    width: 170px;;
+}
+.nav a:hover{ color:#284875; }  
+
+.nav a:active { color: white; }
+
+#nav_cell {
+    background-color:#E8B777;
+}
+
+#footer {
+    text-align:center;
+    background-color:#2DB28D;
+    height: 50px;
+}
+
+.bot {
+    background-color: #E53465;  /* red */
+    padding: 50px 80px;
+}
