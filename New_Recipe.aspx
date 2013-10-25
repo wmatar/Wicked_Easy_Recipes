@@ -50,7 +50,7 @@
     </asp:SqlDataSource>
     <br />
     <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" DataKeyNames="Recipe_ID" 
-        DataSourceID="SqlDataSource1" Height="50px" Width="682px" DefaultMode="Insert">
+        DataSourceID="SqlDataSource1" Height="50px" Width="682px" DefaultMode="Insert" CssClass="Default_Detailsview">
         <Fields>
             <asp:BoundField DataField="Recipe_Name" HeaderText="Recipe Name" SortExpression="Recipe_Name" />
             <asp:BoundField DataField="Submitted_by" HeaderText="Submitted by" SortExpression="Submitted_by" />
@@ -61,7 +61,7 @@
             <asp:BoundField DataField="Ingredient_5" HeaderText="Ingredient #5" SortExpression="Ingredient_5" />
             <asp:BoundField DataField="Preparation" HeaderText="Preparation" SortExpression="Preparation" />
             <asp:BoundField DataField="Notes" HeaderText="Notes" SortExpression="Notes" />
-            <asp:CommandField ShowInsertButton="True" />
+            <asp:CommandField ShowInsertButton="True" ButtonType="Button" InsertText="Save" ShowCancelButton="False" />
         </Fields>
     </asp:DetailsView>
     <br />

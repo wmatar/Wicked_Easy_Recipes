@@ -95,9 +95,21 @@
     
 }
 
-    .Default_Gridview th {
+.Default_Gridview th {
         background-color:green;
     }
-    .Default_Gridview a:link {text-decoration:none;}
 
-    
+.Default_Gridview a:link {
+        text-decoration:none;
+
+    }
+
+.Default_Detailsview {
+    background-color:orange;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    height: 200px ;
+    width: 600px;
+
+}
