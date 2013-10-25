@@ -11,16 +11,10 @@
 
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
         DeleteCommand="DELETE FROM [Recipe] WHERE [Recipe_ID] = @Recipe_ID" 
-        InsertCommand="INSERT INTO [Recipe] ([Recipe_Name], [Submitted_by], [Ingredient_1], [Ingredient_2], 
-        [Ingredient_3], [Ingredient_4], [Ingredient_5], [Preparation], [Notes]) 
-        VALUES (@Recipe_Name, @Submitted_by, @Ingredient_1, @Ingredient_2, @Ingredient_3, @Ingredient_4, @Ingredient_5, 
-        @Preparation, @Notes)" 
+        InsertCommand="INSERT INTO [Recipe] ([Recipe_Name], [Submitted_by], [Ingredient_1], [Ingredient_2], [Ingredient_3], [Ingredient_4], [Ingredient_5], [Preparation], [Notes]) VALUES (@Recipe_Name, @Submitted_by, @Ingredient_1, @Ingredient_2, @Ingredient_3, @Ingredient_4, @Ingredient_5, @Preparation, @Notes)" 
         ProviderName="<%$ ConnectionStrings:ConnectionString.ProviderName %>" 
-        SelectCommand="SELECT * FROM [Recipe]" 
-        UpdateCommand="UPDATE [Recipe] SET [Recipe_Name] = @Recipe_Name, [Submitted_by] = @Submitted_by, 
-        [Ingredient_1] = @Ingredient_1, [Ingredient_2] = @Ingredient_2, [Ingredient_3] = @Ingredient_3, 
-        [Ingredient_4] = @Ingredient_4, [Ingredient_5] = @Ingredient_5, [Preparation] = @Preparation, [Notes] = 
-        @Notes WHERE [Recipe_ID] = @Recipe_ID">
+        SelectCommand="SELECT * FROM [Recipe] WHERE ([Recipe_ID] = @Recipe_ID)" 
+        UpdateCommand="UPDATE [Recipe] SET [Recipe_Name] = @Recipe_Name, [Submitted_by] = @Submitted_by, [Ingredient_1] = @Ingredient_1, [Ingredient_2] = @Ingredient_2, [Ingredient_3] = @Ingredient_3, [Ingredient_4] = @Ingredient_4, [Ingredient_5] = @Ingredient_5, [Preparation] = @Preparation, [Notes] = @Notes WHERE [Recipe_ID] = @Recipe_ID">
         <DeleteParameters>
             <asp:Parameter Name="Recipe_ID" Type="Int32" />
         </DeleteParameters>
@@ -35,6 +29,9 @@
             <asp:Parameter Name="Preparation" Type="String" />
             <asp:Parameter Name="Notes" Type="String" />
         </InsertParameters>
+        <SelectParameters>
+            <asp:QueryStringParameter Name="Recipe_ID" QueryStringField="Recipe_ID" Type="Int32" />
+        </SelectParameters>
         <UpdateParameters>
             <asp:Parameter Name="Recipe_Name" Type="String" />
             <asp:Parameter Name="Submitted_by" Type="String" />
