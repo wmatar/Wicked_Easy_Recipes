@@ -1,5 +1,5 @@
 ﻿body {
-    background-color:white;
+    background-color:#696969;
 }
 
 
@@ -30,8 +30,9 @@
     font-size: 23px;
 }
 
-
+/*------------------------------------------------ HomePage Main Table --------------------------------------*/
 .auto-style1 {
+    background-color:white;
     width: 75%;
     border:solid 1px;
     margin-left:auto;
@@ -85,25 +86,35 @@
     padding: 50px 80px;
 }
 
+
+/*----------------------------------------------  Home page GridView  ---------------------------*/
 .Default_Gridview {
-    background-color:red;
+    background-color:#FFFF99;  /* This is a yellow color */      
     margin-left:auto;
     margin-right:auto;
     text-align:center;
     height: 200px ;
     width: 600px;
+
     
 }
 
+/*------GridView Header-------*/
+
 .Default_Gridview th {
-        background-color:green;
+        background-color:#F08080; /* Coral color */
+        height: 40px;
     }
+
+
 
 .Default_Gridview a:link {
         text-decoration:none;
 
     }
 
+
+/*----------------------  DetailsView  ---------------------------*/
 .Default_Detailsview {
     background-color:orange;
     margin-left:auto;
@@ -112,4 +123,14 @@
     height: 200px ;
     width: 600px;
 
+}
+
+
+.Contact_tbl {
+            width: 50%;
+            margin-left:80px;
+
+        }
+#snd_cell {
+    text-align:center;
 }
