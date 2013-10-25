@@ -84,3 +84,20 @@
     background-color: #E53465;  /* red */
     padding: 50px 80px;
 }
+
+.Default_Gridview {
+    background-color:red;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    height: 200px ;
+    width: 600px;
+    
+}
+
+    .Default_Gridview th {
+        background-color:green;
+    }
+    .Default_Gridview a:link {text-decoration:none;}
+
+    
