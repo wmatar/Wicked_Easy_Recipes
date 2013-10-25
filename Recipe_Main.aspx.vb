@@ -9,4 +9,8 @@ Partial Class Recipe_Main
     Protected Sub SqlDataSource1_Deleted(sender As Object, e As SqlDataSourceStatusEventArgs) Handles SqlDataSource1.Deleted
         Response.Redirect("Default.aspx")
     End Sub
+
+    Protected Sub tb_ed_submit_by_TextChanged(sender As Object, e As EventArgs)
+
+    End Sub
 End Class
