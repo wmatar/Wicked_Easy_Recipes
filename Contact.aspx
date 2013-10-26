@@ -5,7 +5,9 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-    <div><br />
+    <div>
+        <br />
+        <br />
         <table class="Contact_tbl">
             <tr>
                 <td>Your Email Address:</td>
@@ -28,7 +30,7 @@
             <tr>
                 <td colspan="2">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:TextBox ID="TextBox2" runat="server" Height="130px" Width="399px"></asp:TextBox>
+                    <asp:TextBox ID="TextBox2" runat="server" Height="130px" Width="399px" TextMode="MultiLine"></asp:TextBox>
                 </td>
             </tr>
             <tr>

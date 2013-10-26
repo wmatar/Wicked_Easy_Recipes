@@ -11,10 +11,16 @@
 
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
         DeleteCommand="DELETE FROM [Recipe] WHERE [Recipe_ID] = @Recipe_ID" 
-        InsertCommand="INSERT INTO [Recipe] ([Recipe_Name], [Submitted_by], [Ingredient_1], [Ingredient_2], [Ingredient_3], [Ingredient_4], [Ingredient_5], [Preparation], [Notes]) VALUES (@Recipe_Name, @Submitted_by, @Ingredient_1, @Ingredient_2, @Ingredient_3, @Ingredient_4, @Ingredient_5, @Preparation, @Notes)" 
+        InsertCommand="INSERT INTO [Recipe] ([Recipe_Name], [Submitted_by], [Ingredient_1], [Ingredient_2], 
+        [Ingredient_3], [Ingredient_4], [Ingredient_5], [Preparation], [Notes]) 
+        VALUES (@Recipe_Name, @Submitted_by, @Ingredient_1, @Ingredient_2, @Ingredient_3, @Ingredient_4, @Ingredient_5, 
+        @Preparation, @Notes)" 
         ProviderName="<%$ ConnectionStrings:ConnectionString.ProviderName %>" 
         SelectCommand="SELECT * FROM [Recipe] WHERE ([Recipe_ID] = @Recipe_ID)" 
-        UpdateCommand="UPDATE [Recipe] SET [Recipe_Name] = @Recipe_Name, [Submitted_by] = @Submitted_by, [Ingredient_1] = @Ingredient_1, [Ingredient_2] = @Ingredient_2, [Ingredient_3] = @Ingredient_3, [Ingredient_4] = @Ingredient_4, [Ingredient_5] = @Ingredient_5, [Preparation] = @Preparation, [Notes] = @Notes WHERE [Recipe_ID] = @Recipe_ID">
+        UpdateCommand="UPDATE [Recipe] SET [Recipe_Name] = @Recipe_Name, [Submitted_by] = @Submitted_by, 
+        [Ingredient_1] = @Ingredient_1, [Ingredient_2] = @Ingredient_2, [Ingredient_3] = @Ingredient_3, 
+        [Ingredient_4] = @Ingredient_4, [Ingredient_5] = @Ingredient_5, [Preparation] = @Preparation, 
+        [Notes] = @Notes WHERE [Recipe_ID] = @Recipe_ID">
         <DeleteParameters>
             <asp:Parameter Name="Recipe_ID" Type="Int32" />
         </DeleteParameters>
@@ -47,7 +53,9 @@
     </asp:SqlDataSource>
     <br />
     <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" DataKeyNames="Recipe_ID" 
-        DataSourceID="SqlDataSource1" Height="50px" Width="682px" CssClass="Default_Detailsview">
+        DataSourceID="SqlDataSource1" CssClass="Default_Detailsview">
+        <CommandRowStyle CssClass="comd_dView" />
+        <FieldHeaderStyle CssClass="header_style" />
         <Fields>
             <asp:TemplateField HeaderText="Recipe Name" SortExpression="Recipe_Name">
                 <EditItemTemplate>
