@@ -3,12 +3,6 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    
-
-
-     <br />
-    here will be a new recipe<br />
-
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
         DeleteCommand="DELETE FROM [Recipe] WHERE [Recipe_ID] = @Recipe_ID" 
         InsertCommand="INSERT INTO [Recipe] ([Recipe_Name], [Submitted_by], [Ingredient_1], [Ingredient_2], 
@@ -50,7 +44,9 @@
     </asp:SqlDataSource>
     <br />
     <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" DataKeyNames="Recipe_ID" 
-        DataSourceID="SqlDataSource1" Height="50px" Width="682px" DefaultMode="Insert" CssClass="Default_Detailsview">
+        DataSourceID="SqlDataSource1"  DefaultMode="Insert" CssClass="Default_Detailsview">
+        <CommandRowStyle CssClass="comd_dView" />
+        <FieldHeaderStyle CssClass="header_style" />
         <Fields>
             <asp:TemplateField HeaderText="Recipe Name" SortExpression="Recipe_Name">
                 <EditItemTemplate>
@@ -109,14 +105,16 @@
                 </ItemTemplate>
             </asp:TemplateField>
             <asp:BoundField DataField="Notes" HeaderText="Notes" SortExpression="Notes" />
-            <asp:CommandField ShowInsertButton="True" ButtonType="Button" InsertText="Save" ShowCancelButton="False" />
+            <asp:CommandField ShowInsertButton="True" ButtonType="Button" InsertText="Save" ShowCancelButton="False" >
+            <ControlStyle Height="32px" Width="65px" />
+            </asp:CommandField>
         </Fields>
     </asp:DetailsView>
     <br />
 &nbsp;&nbsp;&nbsp;&nbsp;
+    <asp:Label ID="Label5" runat="server"></asp:Label>
     <br />
     <br />
-
 </asp:Content>
 
 

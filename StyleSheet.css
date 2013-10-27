@@ -1,76 +1,56 @@
 ﻿body {
-    background-color:#D2B48C; /* gray color */
+    background-color:#D2B48C; 
 }
-
-
-/* <style type="text/css">
-        .auto-style1 {
-            width: 100%;
-        }
-
-
-    id="header"><h3>Wicked Easy Recipes</h3></td>
-            </tr>
-            <tr>
-                <td><p id="2ndHeader">Using 5 Ingredients or Less!</p></td>
-
-
-    </style> */
-
 #header {
     text-align:center;
-    background-color:#696969; /* tan color */
+    background-color:#696969; 
     color: white;
+    font-size: 23px;
+    text-shadow: 2px 2px #F08080;
 }
-
-
 #head2 {
     height:50px;
     text-align:center;
-    background-color:#FFFF99; /* tan */
+    background-color:#FFFF99;
     font-size: 23px;
     color: #696969;
 }
-
-/*------------------------------------------------ HomePage Main Table --------------------------------------*/
+/*-------------------------- HomePage Main Table -----------------------*/
 .auto-style1 {
     background-color:#D2B48C;
-    width: 75%;
+    width: 65%;
     border:solid 1px;
-    border-color:white;
+    border-color:black;
     margin-left:auto;
     margin-right:auto;
+    font-family: 'Times New Roman', Arial, Calibri;
+    box-shadow: 10px 10px 5px black;
         }   
-
 .nav{
     border:solid 1px;
-    border-color: #ffcc00;
+    border-color: brown;
     border-width:1px 0;
     list-style: none;
     margin: 0;
     padding: 0;
     text-align:center;
-    font-size: 22px;  
-    font-family:Arial,Tahoma;
+    font-size: 18px;    
 }
 .nav li{
     display:inline;
     border-right: solid 2px #555; 
-
 }
-
 .last_li {
     border-right: none !important;
 }
-
 .nav a{
     display:inline-block;
     padding:10px;
     text-decoration: none; 
     color: white;    
-    width: 170px;;
+    width: 110px;
 }
-.nav a:hover{ color:#284875; }  
+.nav a:hover{ color:#696969; }  
 
 .nav a:active { color: white; }
 
@@ -83,45 +63,39 @@
 #footer {
     text-align:center;
     background-color:#696969; /* tan color */
-    height: 50px;
+    height: 70px;
 }
-
-.bot {
-    background-color: #E53465;  /* red */
-    padding: 50px 80px;
-}
-
 
 /*----------------------------------------------  Home page GridView  ---------------------------*/
 .Default_Gridview {
-    background-color:#F08080;  /* #FFFF99 This is a yellow color */      
+    background-color:#F08080;   
     margin-left:auto;
     margin-right:auto;
     text-align:center;
-    height: 200px ;
     width: 600px;
     color: white;
     border-color: white;
-    
+    -moz-box-shadow: 0 0 5px 5px white;
+    -webkit-box-shadow: 0 0 5px 5px white;
+    box-shadow: 0 0 5px 5px white;  
+}
 
-    
+/*-------------- GridView RowStyle -----------*/
+.GV_styleRow {
+    height:40px;
 }
 
 /*------GridView Header-------*/
 
 .Default_Gridview th {
-        background-color:#FFFF99; /* gray color */
+        background-color:#FFFF99; 
         height: 40px;
         color:#696969;
-    }
-
-
-
+}
 .Default_Gridview a:link {
         text-decoration:none;
         color: #696969;
-
-    }
+}
 
 
 /*----------------------  Recipe_Main Page DetailsView  ---------------------------*/
@@ -133,6 +107,9 @@
     height: 80px;
     width: 600px;
     color: white;
+    -moz-box-shadow: 0 0 5px 5px white;
+    -webkit-box-shadow: 0 0 5px 5px white;
+    box-shadow: 0 0 5px 5px white;
 }
 
 /*--------------- DetailsView header size ------------*/
@@ -152,15 +129,27 @@
     border-color: #D2B48C;
     height:80px;
 }
-
-
 .Contact_tbl {
             width: 50%;
             margin-left:80px;
-
-        }
+}
 #snd_cell {
-    text-align:center;
-    
-    
+    text-align:center; 
+}
+
+/*--------------------------------------- About Page ---------------------*/
+/*----------- About Table ----------*/
+.bout_tbl {
+    width: 65%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/*---------- Save Page ------------------------------------------------*/
+/*----- save msge table-------*/
+
+.sav_tbl {
+            width: 65%;
+            padding-left: 30px;
+            padding-top: 25px;    
 }

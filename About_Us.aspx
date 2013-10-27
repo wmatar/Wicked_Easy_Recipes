@@ -1,10 +1,12 @@
 ﻿<%@ Page Title="" Language="VB" MasterPageFile="~/MasterPage.master" AutoEventWireup="false" CodeFile="About_Us.aspx.vb" Inherits="About_Us" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+   
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-
-    <div class="bot"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
+    <table class="bout_tbl">
+        <tr>
+            <td><div ><h3>About us:</h3><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
         Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
         Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 
         Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet 
@@ -18,6 +20,13 @@
         blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae 
         sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis 
         leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum 
-        sodales, augue velit cursus nunc,</p></div>
+        sodales, augue velit cursus nunc,</p>
+    </div></td>
+        </tr>
+    </table>
+    <br />
+    <br />
+    
+    
 </asp:Content>
 

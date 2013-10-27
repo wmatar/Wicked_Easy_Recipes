@@ -4,7 +4,6 @@
     
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-
     <div>
         <br />
         <br />
@@ -15,8 +14,8 @@
             </tr>
             <tr>
                 <td>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:TextBox ID="TextBox1" runat="server" Width="209px" Height="27px"></asp:TextBox>
+                    
+                    <asp:TextBox ID="TextBox1" runat="server" Width="209px" Height="27px" BorderStyle="Inset"></asp:TextBox>
                     <br />
                     <br />
                     <br />
@@ -29,15 +28,15 @@
             </tr>
             <tr>
                 <td colspan="2">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:TextBox ID="TextBox2" runat="server" Height="130px" Width="399px" TextMode="MultiLine"></asp:TextBox>
+                    &nbsp;<asp:TextBox ID="TextBox2" runat="server" Height="130px" Width="399px" TextMode="MultiLine" 
+                        BorderStyle="Inset"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td id="snd_cell" colspan="2">
                     <br />
                     <br />
-                    <asp:Button ID="btn_Send" runat="server" Text="Send Message" />
+                    <asp:Button ID="btn_Send" runat="server" Text="Send Message" Height="32px" Width="105px" />
                 </td>
             </tr>
         </table>

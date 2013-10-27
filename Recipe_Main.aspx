@@ -3,12 +3,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
-
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-
-    <br />
-    This is the Recipe_Main page (Gridview)<br />
-
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
         DeleteCommand="DELETE FROM [Recipe] WHERE [Recipe_ID] = @Recipe_ID" 
         InsertCommand="INSERT INTO [Recipe] ([Recipe_Name], [Submitted_by], [Ingredient_1], [Ingredient_2], 
@@ -114,14 +109,14 @@
                 </ItemTemplate>
             </asp:TemplateField>
             <asp:BoundField DataField="Notes" HeaderText="Notes" SortExpression="Notes" />
-            <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ButtonType="Button" UpdateText="Save" ShowCancelButton="False" />
+            <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ButtonType="Button" UpdateText="Save" ShowCancelButton="False" >
+            <ControlStyle  Height="32px" Width="65px"  />
+            </asp:CommandField>
         </Fields>
     </asp:DetailsView>
     <br />
 &nbsp;&nbsp;&nbsp;&nbsp;
     <br />
     <br />
-
-
 </asp:Content>
 
